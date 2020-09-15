@@ -5,7 +5,8 @@ body {
 .navbar,
 .card-footer,
 .card-header,
-footer {
+footer,
+#btn-bg-col {
   background-color: #313b72;
 }
 
