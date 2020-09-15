@@ -1,9 +1,19 @@
 nav,
-.card-footer {
+.card-footer,
+.card-header,
+footer {
   background-color: #313b72;
 }
 
 .card button {
   color: #313b72;
   border-color: #313b72;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #8064a2 !important;
+  color: darkgray;
 }
