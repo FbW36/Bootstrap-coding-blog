@@ -1,0 +1,8 @@
+.bg-primary,
+.btn-primary {
+  background-color: #313b72 !important;
+}
+
+.border-secondary {
+  border-color: lightgray !important;
+}

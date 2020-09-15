@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/bootstrap-4.5.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Blog-Page</title>
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-primary justify-content-start"
+      class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-start"
     >
       <a
         href="/index.html"
-        class="nav-link active text-white font-weight-bold flex-grow-1"
+        class="ml-5 nav-link active text-white font-weight-bold flex-grow-1"
         >Code Blog</a
       >
       <button
-        class="navbar-toggler"
+        class="navbar-toggler mr-5"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNavAltMarkup"
@@ -24,7 +25,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon border-light"></span>
       </button>
       <div
         class="justify-content-end collapse navbar-collapse"
@@ -42,6 +43,8 @@
         </div>
       </div>
     </nav>
+
+    <!-- Main container -->
     <div class="row row-cols-lg-2">
       <!-- Card for Post -->
       <div class="container">
@@ -50,7 +53,9 @@
             Lorem ipsum dolor sit amet consectetur.
           </h1>
           <p>by <a href="#">Jane Doe</a></p>
-          <p class="py-3 border-top border-bottom border-secondary">
+          <p
+            class="py-3 border-top border-bottom border-secondary text-secondary"
+          >
             Posted on January 1, 2019 at 12:00pm
           </p>
           <img
@@ -178,8 +183,8 @@
             </p>
           </div>
         </div>
-
-        <div class="container mt-3 d-flex py-2 pl-5">
+        <!-- 1st Answer to second comment -->
+        <div class="container d-flex ml-3 py-2 pl-5">
           <div>
             <img
               src="https://randomuser.me/api/portraits/men/55.jpg"
@@ -200,7 +205,8 @@
             </p>
           </div>
         </div>
-        <div class="container mt-3 d-flex py-2 pl-5">
+        <!-- 2nd Answer to second comment -->
+        <div class="container mt-2 d-flex py-2 ml-3 pl-5">
           <div>
             <img
               src="https://randomuser.me/api/portraits/women/55.jpg"
@@ -224,72 +230,76 @@
       </div>
 
       <!-- After Post containers -->
-      <div class="col-md-8 col-lg-4">
-        <div class="container mt-5">
-          <div class="card">
-            <header
-              class="bg-primary text-white font-weight-bold card-title p-2"
-            >
-              Search
-            </header>
-            <div class="card-body">
-              <div class="container input-group md-form form-sm form-2">
-                <input
-                  class="form-control my-0 py-1 red-border"
-                  type="text"
-                  placeholder="Search for..."
-                  aria-label="Search"
-                />
-                <div class="input-group-append">
-                  <span
-                    class="input-group-text bg-secondary text-white font-weight-bold"
-                    id="basic-text1"
-                    >Go!</span
-                  >
+      <div class="container col-lg-4">
+        <div class="row">
+          <div class="mt-5 col-md-8">
+            <div class="card">
+              <header
+                class="bg-primary text-white font-weight-bold card-title p-2"
+              >
+                Search
+              </header>
+              <div class="card-body">
+                <div class="container input-group md-form form-sm form-2">
+                  <input
+                    class="form-control my-0 py-1 red-border"
+                    type="text"
+                    placeholder="Search for..."
+                    aria-label="Search"
+                  />
+                  <div class="input-group-append">
+                    <span
+                      class="input-group-text bg-secondary text-white font-weight-bold"
+                      id="basic-text1"
+                      >Go!</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="card mt-5">
-            <div class="card-header bg-primary text-white font-weight-bold">
-              Categories
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                <a href="">Web Design</a>
-              </p>
-              <p class="card-text">
-                <a href="">HTML</a>
-              </p>
-              <p class="card-text">
-                <a href="">Freebies</a>
-              </p>
-              <p class="card-text">
-                <a href="">JavaScript</a>
-              </p>
-              <p class="card-text">
-                <a href="">CSS</a>
-              </p>
-              <p class="card-text">
-                <a href="">Tutorials</a>
-              </p>
+            <div class="card mt-5">
+              <div class="card-header bg-primary text-white font-weight-bold">
+                Categories
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <a href="">Web Design</a>
+                </p>
+                <p class="card-text">
+                  <a href="">HTML</a>
+                </p>
+                <p class="card-text">
+                  <a href="">Freebies</a>
+                </p>
+                <p class="card-text">
+                  <a href="">JavaScript</a>
+                </p>
+                <p class="card-text">
+                  <a href="">CSS</a>
+                </p>
+                <p class="card-text">
+                  <a href="">Tutorials</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="container mt-5">
-          <div class="card mb-3">
-            <div class="card-header bg-primary text-white font-weight-bold">
-              Side Widget
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Similique quisquam minus nemo fugiat velit eligendi doloribus?
-                Neque maiores, beatae recusandae, consequuntur laborum
-                laudantium soluta unde esse rem tempore, eos modi.
-              </p>
+        <div class="row">
+          <div class="mt-5 col-md-8">
+            <div class="card mb-3">
+              <div class="card-header bg-primary text-white font-weight-bold">
+                Side Widget
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique quisquam minus nemo fugiat velit eligendi doloribus?
+                  Neque maiores, beatae recusandae, consequuntur laborum
+                  laudantium soluta unde esse rem tempore, eos modi.
+                </p>
+              </div>
             </div>
           </div>
         </div>
