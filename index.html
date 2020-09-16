@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Bootstrap-coding-blog/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <title>Bootstrap Code Blog</title>
+  </head>
+  <body>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container">
+        <a class="navbar-brand text-white font-weight-bold" href="#"
+          >Code Blog</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto text-white">
+            <li class="nav-item active">
+              <a class="nav-link text-white font-weight-bolder" href="#"
+                >Blog <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white font-weight-light" href="#"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white font-weight-light" href="#"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white font-weight-light" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Posts start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-8 pt-3">
+
+          <h1 class="display-3 font-weight-bolder">Latest Blog posts</h1>
+
+          <div class="card">
+            <img
+              src="../main-image/christopher-gower-m_HRfLhgABo-unsplash.jpg"
+              class="card-img-top"
+              alt="background"/>
+            <div class="card-body">
+              <h2 class="card-title">Card title consectetur</h2>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Sequi consectetur aspernatur quo
+                voluptate aut laborum!
+              </p>
+              <a href="#" class="btn btn-light btn-outline-secondary"
+                >Read More &#8594;</a>
+            </div>
+            <div class="card-footer bg-primary text-white">
+              Posted on
+            </div>
+          </div>
+ 
+          <div class="card">
+            <img
+              src="../main-image/christopher-gower-m_HRfLhgABo-unsplash.jpg"
+              class="card-img-top"
+              alt="background"/>
+            <div class="card-body">
+              <h2 class="card-title">Card title consectetur</h2>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Sequi consectetur aspernatur quo
+                voluptate aut laborum!
+              </p>
+              <a href="#" class="btn btn-light btn-outline-secondary"
+                >Read More &#8594;</a>
+            </div>
+            <div class="card-footer bg-primary text-white">
+              Posted on
+            </div>
+          </div>  
+  
+          <div class="card mt-4 col-md-6">
+            <img
+              src="../main-image/christopher-gower-m_HRfLhgABo-unsplash.jpg"
+              class="card-img-top"
+              alt="background"/>
+            <div class="card-body">
+              <h2 class="card-title">Card title</h2>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Sequi consectetur aspernatur quo
+                voluptate aut laborum!
+              </p>
+              <a href="#" class="btn btn-light btn-outline-secondary"
+                >Read More &#8594;</a>
+            </div>
+            <div class="card-footer bg-primary text-white">
+              Posted on
+            </div>
+          
+        </div>
+
+          <div class="mt-4 col-md-12">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#"> &#8592; Older</a>
+                </li>
+  
+                <li class="page-item">
+                  <a class="page-link" href="#"> Newer &#8594;</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- This is the side bar  -->
+        <div class="col-md-8 col-lg-4">
+          <div class="mt-3">
+            <div class="border">
+              <div class="bg-primary">
+                <p class="pl-3 py-2 text-light">Search</lp>
+              </div>
+              <div class="d-flex px-3 my-3">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Search for ..."
+                  aria-label="Search"
+                />
+                <button type="button" class="btn btn-secondary">Go!</button>
+              </div>
+            </div>
+
+            <div class="mt-3 border">
+              <div class="bg-primary">
+                <p class="pl-3 py-2 text-light"
+                  >Categories</p>
+              </div>
+
+              <div class="d-flex px-3 my-3 mt-3">
+                <div class="row">
+                  <p class="col-6 my-0"><a href="#">Web Design</a></p>
+                  <p class="col-6 my-0"><a href="#">Javascript</a></p>
+                  <p class="col-6 my-0"><a href="#">HTML</a></p>
+                  <p class="col-6 my-0"><a href="#">CSS</a></p>
+                  <p class="col-6 my-0"><a href="#">Freebies</a></p>
+                  <p class="col-6 my-0"><a href="#">Tutorial</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3 border">
+              <div class="bg-primary">
+                <p class="pl-3 py-2 text-light">Side Widgets</p>
+              </div>
+              <p class="my-0 pl-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                voluptatum dolorum quae magnam corrupti quis reiciendis aliquid
+                alias vero ratione.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue bg-primary py-4">
+      <!-- Copyright -->
+      <div
+        class="footer-copyright text-center justify-content-center py-3 text-white font-weight-bold"
+      >
+        Copyright &#169; Code Blog 2019
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>
